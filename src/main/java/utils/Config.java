@@ -92,20 +92,27 @@ public class Config {
     }
 
     public static class URLS {
-        public static final String demosite_url = "http://nx.com/";
-        public static final String login_url = "http://nx.com/wp-login.php";
+        public static final String demosite_url = "http://localhost:3000/";
+        public static final String login_url = "http://localhost:3000/login";
     }
+
+    public static class HOME {
+        public static final String home_username_header_xpath = "//nav//div[contains(@class, 'nav-item')]/a[@id='username']";
+    }
+
+
 
     public static class UTILS {
         public static final String wordpress_home_xpath = "//*[@id=\"menu-dashboard\"]/ul/li[2]/a";
     }
 
     public static class LOGIN {
-        public static final String username = "sabiro";
-        public static final String password = "1234";
+        public static final String username = "admin.admin";
+        public static final String password = "admin.devd123";
 
-        public static final String username_field_id = "user_login";
-        public static final String password_field_id = "user_pass";
+        public static final String username_field_id = "userNameOrEmail";
+        public static final String password_field_id = "password";
+        public static final String login_button_xpath = "//form/button[@type='submit']";
         public static final String login_button_id = "wp-submit";
     }
 
