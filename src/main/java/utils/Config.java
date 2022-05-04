@@ -92,8 +92,9 @@ public class Config {
     }
 
     public static class URLS {
-        public static final String demosite_url = "http://localhost:3000/";
-        public static final String login_url = "http://localhost:3000/login";
+        public static final String demosite_url = "http://localhost:3000";
+        public static final String login_url = demosite_url + "/login";
+        public static final String user_list_url = demosite_url + "/admin/userlist";
     }
 
     public static class HOME {
